@@ -3,6 +3,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,venv
 
 ### My ignores ###
+files
+images
 media
 .venv
 venv
