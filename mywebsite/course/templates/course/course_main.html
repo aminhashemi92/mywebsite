@@ -1,0 +1,551 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amin Hashemi | python course</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="My personal website">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Python, Physics">
+    <meta name="author" content="Amin Hashemi">
+    
+    <meta property="og:title" content="Amin Hashemi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://aminhashemi92.com" />
+    <meta property="og:image" content="{% static '/mainpage/images/Amin1.jpg' %} " />
+    <meta property="og:description" content="My Personal Website" />
+    <meta name="theme-color" content="#FF0000">
+    
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<!--  -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
+<!--  -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="{% static '/course/css/default.css' %}">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	
+	<link rel="icon" type="image/svg" href="{% static '/mainpage/images/Amin1.jpg' %} " size="32*32" style="border-radius: 50%;">
+
+	<!-- <link href="css/styles.css" rel="stylesheet" /> -->
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+</head>
+<body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="{% static '/course/images/assets/img/navbar-logo.svg' %}" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    منو
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#team">مدرس و منابع</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">جلسه‌ها</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">سرفصل‌ها</a></li>
+                       <!--  <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#services">مشخصات</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">دوره‌ی آموزشی پایتون</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="./register" >ثبت نام</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">مشخصات دوره آموزشی</h2>
+                </div>
+                <br>
+                <br>
+                <div class="row text-center">
+                	<div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-clock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">طول دوره</h4>
+                        <p class="text-muted" style="direction: rtl;">این دوره به‌صورت ۳۰ جلسه‌ی یک ساعته برگزار می‌شود. (مجموعا ۳۰ ساعت) در صورت تمام نشدن مباحث آموزشی، جلسات اضافه به‌صورت رایگان برگزار خواهد شد.</p>
+                    </div>
+
+                    
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">شیوه‌ی برگزاری</h4>
+                        <p class="text-muted" style="direction: rtl;">کلاس‌ها به‌صورت آنلاین و در هر هفته دو جلسه‌ی یک ساعته برگزار می‌شود. یک جلسه مخصوص آموزش و یک جلسه مخصوص حل تمرین و پرسش و پاسخ است.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">هدف دوره</h4>
+                        <p class="text-muted" style="direction: rtl;">هدف از این دوره یادگیری زبان برنامه‌نویسی پایتون از مباحث مقدماتی تا مباحث پیشرفته می‌باشد. در این دوره تمرکز برروی یادگیری کاربردی برنامه‌‌نویسی به هدف استفاده در زمینه‌های مختلف تحصیلی و کاری می‌باشد. در کنار زبان پایتون، آشنایی با git و فریم‌وورک‌های مختلف پایتون نیز صورت می‌گیرد.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-credit-card fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">هزینه‌ی ثبت‌نام</h4>
+                        <p class="text-muted" style="direction: rtl;">هزینه‌ی ثبت‌نام دوره به‌ازای تمام جلسات مبلغ .... می‌باشد.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">ظرفیت ثبت‌نام</h4>
+                        <p class="text-muted" style="direction: rtl;">این دوره به‌صورت نیمه‌خصوصی با ظرفیت محدود ۱۲ نفر برگزار می‌شود.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-calendar fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">زمان شروع</h4>
+                        <p class="text-muted" style="direction: rtl;">شروع دوره از تاریخ ..... و به مدت ۱۵ هفته  می‌باشد.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio" style="direction:rtl;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">جلسه‌ها</h2>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static '/course/images/assets/img/portfolio/1.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">هفته‌ی اول</div>
+                                <!-- <div class="portfolio-caption-subheading text-muted">آشنایی با پایتون، نصب پایتون، محیط‌های برنامه‌نویسی، آشنایی با متغیر‌ها ۱، نحوه‌ی دریافت تمرین‌ها، توضیحات تکمیلی</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static '/course/images/assets/img/portfolio/2.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">هفته‌ی دوم</div>
+                                <!-- <div class="portfolio-caption-subheading text-muted">ادامه</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static '/course/images/assets/img/portfolio/3.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">هفته‌ی سوم</div>
+                                <!-- <div class="portfolio-caption-subheading text-muted">ادامه</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <!-- <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src=" {% static '/course/images/assets/img/portfolio/4.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Lines</div>
+                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"> -->
+                        <!-- Portfolio item 5-->
+                        <!-- <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static '/course/images/assets/img/portfolio/5.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Southwest</div>
+                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"> -->
+                        <!-- Portfolio item 6-->
+                        <!-- <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static '/course/images/assets/img/portfolio/6.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">سرفصل‌ها</h2>
+                    <br>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/1.png'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>2009-2011</h4> -->
+                                <h4 class="subheading">آشنایی با پایتون</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">نصب پایتون <br> محیط‌های برنامه‌نویسی  پایتون<br>بررسی چند کد ساده</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/4.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>March 2011</h4> -->
+                                <h4 class="subheading">انواع متغیر (۱)</h4>
+                            </div>
+                            <div class="timeline-body" style="direction:rtl;"><p class="text-muted">
+                            	کار با متغیر int و  float
+                            	<br>
+                            	کار با متغیر boolean
+                            	<br>
+                            	کار با string
+                            	<br>
+                            	انجام محاسبات ریاضی
+                            </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/2.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>December 2015</h4> -->
+                                <h4 class="subheading">دستورات شرطی و حلقه‌ها</h4>
+                            </div>
+                            <div class="timeline-body" style="direction:rtl;"><p class="text-muted">
+                            	آشنایی با ساختار شرطی if
+                            	<br>
+                            	آشنایی با حلقه تکرار for
+                            	<br>
+                            	آشنایی با حلقه while
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/3.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>July 2020</h4> -->
+                                <h4 class="subheading">انواع متغیر (۲)</h4>
+                            </div>
+                            <div class="timeline-body" style="direction:rtl;"><p class="text-muted">
+                            	آشنایی با list
+                            	<br>
+                            	آشنایی با dictionary
+                            	<br>
+                            	آشنایی با tuple
+                            	<br>
+                            	آشنایی با  set
+                            </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/5.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>2009-2011</h4> -->
+                                <h4 class="subheading">توابع و کتابخانه‌ها</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">
+                            	آشنایی با توابع
+                            	<br>
+                            	تعریف تابع و استفاده از آن
+                            	<br>
+                            	آشنایی با کتابخانه‌ها و ماژول‌ها
+                            	<br>
+                            	استفاده از کتابخانه‌های آماده
+                            </p></div>
+                        </div>
+                    </li>
+                     <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/6.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>July 2020</h4> -->
+                                <h4 class="subheading">کار با چند کتابخانه ساده</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">
+                            	کار با فایل
+                            	<br>
+                            	کار با اعداد تصادفی
+                            	<br>
+                            	محاسبات ریاضی
+                            </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/7.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>2009-2011</h4> -->
+                                <h4 class="subheading">شئ گرایی</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">
+                            	مفهوم شئ‌گرایی
+                            	<br>
+                            	نوشتن کلاس
+                            	<br>
+                            	ارث بری
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/8.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>July 2020</h4> -->
+                                <h4 class="subheading">کتابخانه‌های مخصوص داده و رسم نمودار</h4>
+                            </div>
+                            <div class="timeline-body" style="direction:rtl;"><p class="text-muted">
+                            	آشنایی با numpy
+                            	<br>
+                            	آشنایی با matplotlib
+                            	<br>
+                            	حل چند مثال آماری
+                            </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static '/course/images/assets/img/about/9.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>2009-2011</h4> -->
+                                <h4 class="subheading">افق پیش‌رو</h4>
+                            </div>
+                            <div class="timeline-body" style="direction:rtl;"><p class="text-muted">
+                            	آشنایی با QT
+                            	<br>
+                            	آشنایی با django
+                            	<br>
+                            	پایتون و علوم داده
+                            	<br>
+                            	آشنایی با pygame
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4 style="direction:rtl;">
+                            	<br>
+                                ادامه دارد ...
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">مدرس دوره و منابع</h2>
+                    <br>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static '/course/images/assets/img/team/1.jpg'%}" alt="..." />
+                            <h4>Python for Everybody</h4>
+                            <p class="text-muted">Dr. Charles R. Severance</p>
+                            <a class="btn btn-dark btn-social mx-2" href="{% static '/course/files/2.pdf' %}"><i class="fa fa-download"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static '/course/images/assets/img/team/2.jpg'%}" alt="..." />
+                            <h4>Python Crash Course</h4>
+                            <p class="text-muted">Eric Matthes</p>
+                            <a class="btn btn-dark btn-social mx-2" href="{% static '/course/files/1.pdf' %}"><i class="fa fa-download"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static '/course/images/assets/img/team/3.jpg'%}" alt="..." />
+                            <h4>امین هاشمی</h4>
+                            <p class="text-muted" style="direction:rtl;">معلم و برنامه نویس ساده!</p>
+                            <a class="btn btn-dark btn-social mx-2" href="http://www.aminhashemi92.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static '/course/images/assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">هفته اول</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{% static '/course/images/assets/img/portfolio/1.jpg'%}" alt="..." />
+                                    <p style="direction:rtl;">خلاصه مباحث عنوان شده :</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong style="direction:rtl;">تمرین هفته اول :</strong>
+                                            <a href="#">دانلود</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        بستن
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static '/course/images/assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">هفته دوم</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{% static '/course/images/assets/img/portfolio/2.jpg'%}" alt="..." />
+                                    <p style="direction:rtl;">خلاصه مباحث عنوان شده :</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong style="direction:rtl;">تمرین هفته دوم:</strong>
+                                            <a href="#">دانلود</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        بستن
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static '/course/images/assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">هفته سوم</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{% static '/course/images/assets/img/portfolio/3.jpg'%}" alt="..." />
+                                    <p style="direction:rtl;">خلاصه مباحث عنوان شده :</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong style="direction:rtl;">تمرین هفته سوم:</strong>
+                                            <a href="#">دانلود</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        بستن
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script type="text/javascript" src="{% static 'course/js/scripts.js' %}"></script>
+    </body>
+</html>

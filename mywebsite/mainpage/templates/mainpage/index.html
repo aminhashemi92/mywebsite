@@ -4,7 +4,23 @@
 <head>
 	<title>Amin Hashemi</title>
 
-
+    <meta charset="UTF-8">
+    <meta name="description" content="My personal website">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Python, Physics">
+    <meta name="author" content="Amin Hashemi">
+    
+    <meta property="og:title" content="Amin Hashemi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://aminhashemi92.com" />
+    <meta property="og:image" content="{% static '/mainpage/images/Amin1.jpg' %} " />
+    <meta property="og:description" content="My Personal Website" />
+    <meta name="theme-color" content="#FF0000">
+    
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    
+    
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -13,6 +29,8 @@
 
 	<link rel="stylesheet" type="text/css" href="{% static '/mainpage/css/default.css' %}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	
+	<link rel="icon" type="image/svg" href="{% static '/mainpage/images/Amin1.jpg' %} " size="32*32" style="border-radius: 50%;">
 </head>
 <body>
 
@@ -90,7 +108,7 @@
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Python, Django, DRF:<br><a target="_blank" href="resume.pdf">Download Resume</a></p>
+					<p>Fullstack developer with primary focus on Python, Django, DRF:<br><a target="_blank" href="{% static '/mainpage/files/resume.pdf' %}">Download Resume</a></p>
 
 					<div id="skills">
 						<ul>
@@ -147,16 +165,7 @@
 
 			<div class="post-wrapper">
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="{% static '/mainpage/images/physics.jpg' %}">
-						<div class="post-preview">
-							<h6 class="post-title">Physics Courses</h6>
-							<p class="post-intro">Exercises, Experiments & Homeworks on physics education</p>
-							<a href="post.html">Read More</a>
-						</div>
-					</div>
-				</div>
+				
 
 				<div>
 					<div class="post">
@@ -164,7 +173,7 @@
 						<div class="post-preview">
 							<h6 class="post-title">Python Course</h6>
 							<p class="post-intro">Learn the fundamentals of coding in Python with a focus on practical business applications.</p>
-							<a href="post.html">Read More</a>
+							<a href="/course/python_course">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -175,7 +184,7 @@
 						<div class="post-preview">
 							<h6 class="post-title">PyQt5 Course</h6>
 							<p class="post-intro">This course will allow you to add GUI programming using PYQT5 to your box of tricks.</p>
-							<a href="post.html">Read More</a>
+							<a href="#post-wrapper" style="color: gray;">inactive</a>
 						</div>
 					</div>
 				</div>
@@ -185,8 +194,19 @@
 						<img class="thumbnail" src="{% static '/mainpage/images/django.png' %}">
 						<div class="post-preview">
 							<h6 class="post-title">Django Course</h6>
-							<p class="post-intro">This Django course explains how to use Django framework to create dynamic web applications. After completing this training course you would be able to use Django on your website projects.</p>
-							<a href="post.html">Read More</a>
+							<p class="post-intro">This Django course explains how to use Django framework to create dynamic web applications.</p>
+							<a href="#post-wrapper" style="color: gray;">inactive</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="{% static '/mainpage/images/physics.jpg' %}">
+						<div class="post-preview">
+							<h6 class="post-title">Physics Courses</h6>
+							<p class="post-intro">Exercises, Experiments & Homeworks on physics education</p>
+							<a href="#post-wrapper" style="color: gray;">inactive</a>
 						</div>
 					</div>
 				</div>

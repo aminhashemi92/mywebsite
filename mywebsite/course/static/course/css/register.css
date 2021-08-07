@@ -1,0 +1,52 @@
+  @font-face {
+      font-family: Shabnam;
+      src: url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.eot');
+      src: url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.eot?#iefix') format('embedded-opentype'),
+           url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.woff') format('woff'),
+           url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.ttf') format('truetype');
+      font-weight: normal;
+    }
+
+
+body {
+     background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;
+    background-size: cover;
+    font-family: 'Shabnam';
+}
+
+*[role="form"] {
+    max-width: 430px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+    font-family: 'Shabnam';
+    margin-top: 20px;
+}
+
+*[role="form"] h2 { 
+    padding-bottom: 20px;
+    font-family: 'Shabnam';
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+label{
+  margin: 0;
+  padding: 0;
+  /*color: red;*/
+}
+
+input{
+    width: 90%;
+    
+
+}
+input:focus{
+    border: 1px solid #F47E58;
+}
